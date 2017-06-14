@@ -4,10 +4,7 @@ var Schema = mongoose.Schema;
 
 var articleSchema = new Schema({
 	title: String,
-	date: {
-		type: Date,
-		default: Date.now
-	},
+	date: Date,
 	url: String,
 	favorited: {
 		type: Boolean,

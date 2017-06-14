@@ -24,7 +24,11 @@ class Main extends Component {
 		return (
 			<div className="container-fluid">
 				<Search setParent={this.setParent}/>
-				<Results />
+				<Results
+					topic={this.state.topic}
+					startYear={this.state.startYear}
+					endYear={this.state.endYear}
+				/>
 				<Saved />
 			</div>
 		);
@@ -32,3 +36,7 @@ class Main extends Component {
 }
 
 export default Main;
+
+				// <div>{this.state.topic}</div>
+				// <div>{this.state.startYear}</div>
+				// <div>{this.state.endYear}</div>

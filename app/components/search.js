@@ -35,9 +35,9 @@ class Search extends Component {
 							onChange={this.handleInputChange}
 						/>
 						<br/>
-				  		<label htmlFor="startYear">Start Year</label>
+				  		<label htmlFor="startYear">Start Year (optional)</label>
 				    	<input
-				    		type="text"
+				    		type="number"
 				    		className="form-control"
 				    		id="startYear"
 				    		name="startYear"
@@ -45,9 +45,9 @@ class Search extends Component {
 							onChange={this.handleInputChange}
 						/>
 						<br/>
-				  		<label htmlFor="endYear">End Year</label>
+				  		<label htmlFor="endYear">End Year (optional)</label>
 				    	<input
-				    		type="text"
+				    		type="number"
 				    		className="form-control"
 				    		id="endYear"
 				    		name="endYear"
