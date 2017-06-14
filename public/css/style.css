@@ -1,0 +1,43 @@
+body {
+	text-align: center;
+}
+
+.jumbotron {
+/*	background-image: url(http://s3.amazonaws.com/libapps/accounts/89388/images/newspaper.jpg);*/
+	background-color: silver;
+	color: gray;
+}
+
+.glyphicon {
+	color: black;
+}
+
+#mainHeader {
+	color: black;
+	font-style: italic;
+	text-decoration: none;
+}
+
+#mainHeader:link {
+	color: black;
+	font-style: italic;
+	text-decoration: none;
+}
+
+#mainHeader:visited {
+	color: black;
+	font-style: italic;
+	text-decoration: none;
+}
+
+#mainHeader:hover {
+	color: black;
+	font-style: italic;
+	text-decoration: none;
+}
+
+#mainHeader:active {
+	color: black;
+	font-style: italic;
+	text-decoration: none;
+}
