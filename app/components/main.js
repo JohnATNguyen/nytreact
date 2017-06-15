@@ -11,7 +11,11 @@ class Main extends Component {
 			startYear: '',
 			endYear: ''
 		}
-		this.setParent=this.setParent.bind(this);
+		this.getSaved = this.getSaved.bind(this);
+		this.setParent = this.setParent.bind(this);
+	}
+	getSaved() {
+		this.child.getSaved();
 	}
 	setParent(topic, startYear, endYear) {
 		this.setState({
@@ -28,8 +32,11 @@ class Main extends Component {
 					topic={this.state.topic}
 					startYear={this.state.startYear}
 					endYear={this.state.endYear}
+					getSaved={this.getSaved}
 				/>
-				<Saved />
+				<Saved
+					ref={instance => { this.child = instance; }}
+				/>
 			</div>
 		);
 	}

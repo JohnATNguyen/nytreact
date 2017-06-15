@@ -9,6 +9,7 @@ class Results extends Component {
 			articles: []
 		}
 		// this.getArticles = this.getArticles.bind(this);
+		this.getSaved = this.getSaved.bind(this);
 		this.renderArticles = this.renderArticles.bind(this);
 	}
 	componentWillReceiveProps(nextProps) {
@@ -19,14 +20,15 @@ class Results extends Component {
 			this.setState({articles: res.data.response.docs});
 		});
 	}
-	// getArticles() {
-
-	// }
+	getSaved() {
+		this.props.getSaved();
+	}
 	renderArticles() {
 		return this.state.articles.map(article => (
 			<Panel1
 				article={article}
 				key={article._id}
+				getSaved={this.getSaved}
 			/>
 		));
 	}

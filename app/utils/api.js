@@ -16,6 +16,9 @@ const API = {
 	saveArticle: (title, url) => {
 		return axios.post('/api/saved', {title: title, url: url});
 	},
+	getSaved: () => {
+		return axios.get('/api/saved');
+	},
 	deleteArticle: (id) => {
 		return axios.delete(`/api/saved/${id}`);
 	},

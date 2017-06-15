@@ -7,9 +7,7 @@ class Panel1 extends Component {
 		this.saveArticle = this.saveArticle.bind(this);
 	}
 	saveArticle() {
-		API.saveArticle(this.props.article.headline.main, this.props.article.web_url).then((res) => {
-			console.log(res);
-		});
+		API.saveArticle(this.props.article.headline.main, this.props.article.web_url).then(this.props.getSaved);
 	}
 	render() {
 		return (

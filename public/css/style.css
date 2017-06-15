@@ -46,10 +46,10 @@ input {
 	text-align: center;
 }
 
-#resultListing {
+#resultListing, #savedListing {
 	overflow: auto;
 }
 
-#saveButton {
+#saveButton, #deleteButton {
 	float: right;
 }
