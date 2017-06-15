@@ -8,7 +8,7 @@ router.get('/saved', articlesController.index);
 
 router.post('/saved', articlesController.create);
 
-router.patch('/quotes/:id', articlesController.update);
+// router.patch('/quotes/:id', articlesController.update);
 
 router.delete('/saved/:id', articlesController.destroy);
 

@@ -19,11 +19,11 @@ const API = {
 	deleteArticle: (id) => {
 		return axios.delete(`/api/saved/${id}`);
 	},
-	favoriteArticle: (article) => {
-		article.favorited = !article.favorited;
-		const { _id, favorited } = article;
-		return axios.patch(`/api/saved/${_id}`, { favorited });
-	}
+	// favoriteArticle: (article) => {
+	// 	article.favorited = !article.favorited;
+	// 	const { _id, favorited } = article;
+	// 	return axios.patch(`/api/saved/${_id}`, { favorited });
+	// }
 };
 
 export default API;

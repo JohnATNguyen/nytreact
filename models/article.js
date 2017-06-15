@@ -6,10 +6,14 @@ var articleSchema = new Schema({
 	title: String,
 	date: Date,
 	url: String,
-	favorited: {
-		type: Boolean,
-		default: false
+	saveDate: {
+		type: Date,
+		default: Date.now
 	}
+	// favorited: {
+	// 	type: Boolean,
+	// 	default: false
+	// }
 });
 
 var Article = mongoose.model('Article', articleSchema);

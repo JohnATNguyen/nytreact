@@ -8,18 +8,20 @@ class Results extends Component {
 		this.state = {
 			articles: []
 		}
-		this.getArticles = this.getArticles.bind(this);
+		// this.getArticles = this.getArticles.bind(this);
 		this.renderArticles = this.renderArticles.bind(this);
 	}
-	componentDidUpdate() {
-		this.getArticles();
-	}
-	getArticles() {
-		API.getArticles(this.props.topic, this.props.startYear, this.props.endYear).then((res) => {
-			console.log(res.data.response.docs);
+	componentWillReceiveProps(nextProps) {
+		// console.log('TAG');
+		// this.getArticles();
+		API.getArticles(nextProps.topic, nextProps.startYear, nextProps.endYear).then((res) => {
+			// console.log(res.data.response.docs);
 			this.setState({articles: res.data.response.docs});
 		});
 	}
+	// getArticles() {
+
+	// }
 	renderArticles() {
 		return this.state.articles.map(article => (
 			<Panel1
@@ -45,7 +47,3 @@ class Results extends Component {
 }
 
 export default Results;
-
-				// <div>{this.props.topic}</div>
-				// <div>{this.props.startYear}</div>
-				// <div>{this.props.endYear}</div>

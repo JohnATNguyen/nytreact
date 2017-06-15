@@ -41,3 +41,15 @@
 input {
 	width: 100%;
 }
+
+#searchSubmitDiv {
+	text-align: center;
+}
+
+#resultListing {
+	overflow: auto;
+}
+
+#saveButton {
+	float: right;
+}

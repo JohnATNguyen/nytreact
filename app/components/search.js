@@ -55,12 +55,14 @@ class Search extends Component {
 							onChange={this.handleInputChange}
 						/>
 						<br/>
-						<button
-							onClick={this.handleButtonClick}
-							className="btn btn-default"
-						>
-						Submit
-						</button>
+						<div id="searchSubmitDiv">
+							<button
+								onClick={this.handleButtonClick}
+								className="btn btn-default"
+							>
+								Submit
+							</button>
+						</div>
 				  	</div>
 				</div>
 			</div>
